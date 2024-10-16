@@ -1,0 +1,74 @@
+---------------------------
+###### Tic Tac Toe ########
+---------------------------
+
+Decomposition: 
+
+- Main Components: Board, Game Logic, Player
+
+- Breaking Down Components: 
+
+--- Board : Create game board (cell 3x3), get cell location
+
+--- Game Logic : Check winning condition, customize the cell on the board via board function, set cell availability
+
+--- Player : Accept user input (name, game turns)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Working on Functions for components:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Board:
+
+    Factory Functions:
+
+        Attributes/Functions:
+
+            Public: 
+
+                * getCell
+            
+            Private: 
+
+                * CreateBoard
+                * resetBoard
+    
+
+Game Logic: 
+
+    Factory Functions:
+
+        Attributes/Functions:
+
+            Public: 
+
+                * getPlayerTurn
+            
+            Private:
+
+                * listenToThePlayerAction
+                * checkWinningCondition
+                * resetGame
+                * disableCell
+            
+
+Player:
+
+    Factory Function:
+
+        Function / attributes:
+
+            Public:
+
+                * getName
+                * getScore
+
+
+            Private:
+
+                * name
+                * score
+
+
+
