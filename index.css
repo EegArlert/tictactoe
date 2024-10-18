@@ -7,6 +7,11 @@ body {
     color: white;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 main .game-board-wrapper{
     display: grid;
     grid-template-rows: repeat(3, 125px);
@@ -23,7 +28,7 @@ main .game-board-wrapper div {
     height: 125px;
     text-align: center;
     align-content: center;
-    background-color: aliceblue;
+    background-color: rgb(240, 248, 255);
     color: rgba(0, 0, 0, 0.5);
     font-size: 120px;
     font-weight: 800;;
@@ -38,4 +43,10 @@ main .game-control-wrapper {
 main button {
     width: 150px;
     height: 60px;
+}
+
+section {
+    padding-top: 25px;
+    font-size: 40px;
+    text-align: center;
 }
